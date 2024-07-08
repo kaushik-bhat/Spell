@@ -13,14 +13,14 @@ class trieNode{
         trieNode() : isEndOfWord(false) {}
 };
 
-class trie{
+class Trie{
     private:
         trieNode* root;
 
         void suggestHelper(trieNode* current, std::string prefix, std::vector<std::string>& suggestions);
     
     public:
-        trie();
+        Trie();
         void insert(const std::string& word);
         std::vector<std::string> suggest(const std::string& prefix);
 };
