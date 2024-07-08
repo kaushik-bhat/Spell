@@ -10,7 +10,7 @@ class trieNode{
         bool isEndOfWord;
         std::unordered_map<char,trieNode*> children;
 
-        trieNode() : isEndOfWord(false) {}
+        trieNode() :isEndOfWord(false) {}
 };
 
 class Trie{
